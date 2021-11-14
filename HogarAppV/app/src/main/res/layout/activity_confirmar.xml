@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_300"
+    android:padding="8dp"
+    tools:context=".Confirmar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_300"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tie_confirma"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/blue_300"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="@string/texto_confirmacion"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_confirmado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_300"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/ic_yona_w"
+            app:iconTint="@color/white"
+            app:iconSize="@dimen/dim_yona_w"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tie_asignada"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/blue_300"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="@string/texto_asignada"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tie_exitos"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/blue_300"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:text="@string/texto_deseos"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

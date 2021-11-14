@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HogarAppV</string>
+    <string name="hint_nombre">Ingrese su Nombre</string>
+    <string name="hint_clave">Ingrese su Clave</string>
+    <string name="texto_login">Ingrese / Login</string>
+    <string name="texto_logo">HogarApp</string>
+    <string name="texto_sesion">INICIO DE SESION</string>
+    <string name="texto_crear">CREAR CUENTA</string>
+    <string name="texto_terminos">Estoy de acuerdo con los terminos y politicas de privacidad</string>
+    <string name="texto_cuenta">Crear Cuenta</string>
+    <string name="texto_llenado">Cree una cuenta llenando la informaciion</string>
+    <string name="texto_reclave">Vuelva a ingresar su clave</string>
+    <string name="hint_telefono">Ingrese su Telefono</string>
+    <string name="hint_email">Ingrese su email</string>
+    <string name="hint_alias">Ingrese su Alias</string>
+    <string name="texto_buscar">Toque aqui para BUSCAR</string>
+    <string name="hint_ciudad">Ciudad</string>
+    <string name="hint_zona">Zona</string>
+    <string name="hint_localidad">Localidad</string>
+    <string name="hint_direccion">Direccion</string>
+    <string name="hint_construido">Construido</string>
+    <string name="texto_direccion_compra">CR 10#10-10/BOGOTA SUR</string>
+    <string name="texto_op_compra">Elija una opcion con el inmueble</string>
+    <string name="texto_comprar">Comprar</string>
+    <string name="texto_alquilar">Alquilar</string>
+    <string name="hint_fecha">Seleccione la fecha</string>
+    <string name="hint_descripcion">Descripcion</string>
+    <string name="texto_promesa">Enviar promesa de compraventa</string>
+    <string name="texto_llamar">Lamar</string>
+    <string name="texto_agendar">Agendar</string>
+    <string name="texto_perfil">Perfil</string>
+    <string name="texto_su_predio">Su inmueble: CR10 # 10 - 10</string>
+    <string name="texto_confirmacion">Confirmacion</string>
+    <string name="texto_asignada">Su cita esta asignada</string>
+    <string name="texto_deseos">Bendiciones en su nuevo hogar</string>
+</resources>

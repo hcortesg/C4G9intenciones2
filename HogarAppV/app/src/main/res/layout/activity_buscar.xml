@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_300"
+    android:padding="8dp"
+    tools:context=".Buscar">
+
+    <LinearLayout
+
+        android:id="@+id/ll_boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/ll_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_buscar_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_900"
+            android:text="@string/texto_buscar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/ll_filtro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_boton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/texto_logo"
+            android:textColor="@color/white"
+            android:textSize="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_filtro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_boton"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_ciudad_b"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_500"
+            app:endIconDrawable="@drawable/ic_arrow_r"
+            android:hint="@string/hint_ciudad"
+            app:endIconMode="custom"
+            app:startIconContentDescription="nombre completo">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/tie_ciudad_b"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/hint_ciudad"
+                android:inputType="textAutoComplete"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_zona_b"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_500"
+            app:endIconDrawable="@drawable/ic_arrow_r"
+            android:hint="@string/hint_zona"
+            app:endIconMode="custom"
+            app:startIconContentDescription="nombre completo">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/tie_zona_b"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/hint_zona"
+                android:inputType="textAutoComplete"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_localidad_b"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_500"
+            app:endIconDrawable="@drawable/ic_arrow_r"
+            android:hint="@string/hint_localidad"
+            app:endIconMode="custom"
+            app:startIconContentDescription="nombre completo">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/tie_localidad_b"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/hint_localidad"
+                android:inputType="textAutoComplete"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_direccion_b"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_500"
+            app:endIconDrawable="@drawable/ic_arrow_r"
+            android:hint="@string/hint_direccion"
+            app:endIconMode="custom"
+            app:startIconContentDescription="nombre completo">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/tie_direccion_b"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/hint_direccion"
+                android:inputType="textAutoComplete"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_construido_b"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_500"
+            app:endIconDrawable="@drawable/ic_arrow_r"
+            android:hint="@string/hint_construido"
+            app:endIconMode="custom"
+            app:startIconContentDescription="nombre completo">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/tie_construido_b"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/hint_construido"
+                android:inputType="textAutoComplete"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

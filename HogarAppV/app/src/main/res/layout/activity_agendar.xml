@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_500"
+    android:padding="8dp"
+    tools:context=".Agendar">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/tie_fecha_a"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/blue_900"
+        android:enabled="false"
+        android:hint="@string/hint_fecha"
+        android:inputType="date"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="@string/hint_fecha"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/tie_descripcion_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/tie_descripcion_a"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:hint="@string/hint_descripcion"
+        android:maxLines="5"
+        android:padding="8dp"
+        android:text="@string/texto_promesa"
+        app:layout_constraintBottom_toTopOf="@id/ll_perfil_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tie_fecha_a" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_perfil_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_300"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tie_descripcion_a">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tie_perfil_a"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/blue_300"
+            android:enabled="false"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:text="@string/texto_perfil"
+            android:textColor="@color/white" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_cliente_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_300"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_perfil"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_perfil" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_opciones_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_300"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/tie_cliente_a"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/blue_300"
+                    android:enabled="false"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:text="Karen Gomez"
+                    android:textColor="@color/white" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_botones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/bt_llamar_a"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/blue_900"
+                        android:text="@string/texto_llamar"
+                        android:textColor="@color/white"
+                        app:icon="@drawable/ic_phone_l"
+                        app:iconTint="@color/white" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/bt_agendar_a"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="@color/blue_900"
+                        android:text="@string/texto_agendar"
+                        android:textColor="@color/white"
+                        app:icon="@drawable/ic_agenda"
+                        app:iconTint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/tie_predio_a"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/blue_300"
+            android:enabled="false"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:text="@string/texto_su_predio"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
